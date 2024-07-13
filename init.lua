@@ -1,6 +1,3 @@
--- include the custom remap file
-require 'lua.custom.remap'
-
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -34,7 +31,7 @@ vim.opt.breakindent = true
 vim.opt.undofile = true
 
 -- Save undo history into the given Directory
-vim.opt.undodir = os.getenv 'Home' .. '/.vim/undodir'
+vim.opt.undodir = os.getenv 'HOME' .. '/.vim/undodir'
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
